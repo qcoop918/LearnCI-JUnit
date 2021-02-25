@@ -24,4 +24,3 @@ jobs:
           javac -d bin/ src/Calculator.java
           javac -d bin -cp bin:lib/junit-platform-console-standalone-1.5.2.jar $(find test/ -name "*.java")
           java -jar lib/junit-platform-console-standalone-1.5.2.jar --class-path bin --scan-class-path
-        
